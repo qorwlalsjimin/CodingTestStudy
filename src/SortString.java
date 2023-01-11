@@ -21,6 +21,8 @@ class Solution {
 //        return answer;
 
         //2> Stream
-        return Arrays.stream(my_string.toLowerCase().split("")).sorted().collect(Collectors.joining());
+        return Arrays.stream(my_string.toLowerCase().split("")) //소문자가 된 문자열을 ""로 나누어 Stream 생성
+                .sorted() //정렬
+                .collect(Collectors.joining()); //collect로 String형으로 모아준다
     }
 }
