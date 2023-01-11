@@ -11,12 +11,13 @@ public class DivSquareNum {
 
 class Solution2{
     public int solution(int n) {
-        int answer = 2;
-        //1> 반복문으로 풀기
-        for(int i = 1; i<=1000; i++)
-            if(i*i == n) answer = 1;
-        return answer;
+//        int answer = 2;
+//        //1> 반복문으로 풀기
+//        for(int i = 1; i<=1000; i++)
+//            if(i*i == n) answer = 1;
+//        return answer;
 
-
+        //2> Math.pow()메서드 이용해서 풀기
+        return (int)Math.pow( (int)Math.pow(n, 0.5) ,2)==n ? 1 : 2;
     }
 }
