@@ -1,4 +1,8 @@
-//제곱수 판별하기 https://school.programmers.co.kr/learn/courses/30/lessons/120909
+package day2023_01_11;
+
+//제곱수 판별하기
+//문제 https://school.programmers.co.kr/learn/courses/30/lessons/120909
+//블로그 https://qiwisil.tistory.com/37
 public class DivSquareNum {
     public static void main(String[] args) {
         Solution2 s = new Solution2();

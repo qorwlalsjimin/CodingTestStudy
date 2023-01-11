@@ -1,10 +1,11 @@
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+package day2023_01_11;
 
-//문자열 정렬하기(2) https://school.programmers.co.kr/learn/courses/30/lessons/120911
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+//문자열 정렬하기(2)
+//문제 https://school.programmers.co.kr/learn/courses/30/lessons/120911
+//블로그 https://qiwisil.tistory.com/38
 public class SortString {
     public static void main(String[] args) {
         Solution s = new Solution();
