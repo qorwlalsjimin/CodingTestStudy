@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -13,9 +14,13 @@ public class SortString {
 
 class Solution {
     public String solution(String my_string) {
-        char[] chars = my_string.toLowerCase().toCharArray();
-        Arrays.sort(chars);
-        String answer = new String(chars);
-        return answer;
+//        //1> char배열 to 문자열 => Arrays.sort()
+//        char[] chars = my_string.toLowerCase().toCharArray();
+//        Arrays.sort(chars);
+//        String answer = new String(chars);
+//        return answer;
+
+        //2> Stream
+        return Arrays.stream(my_string.toLowerCase().split("")).sorted().collect(Collectors.joining());
     }
 }
