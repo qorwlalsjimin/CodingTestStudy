@@ -15,11 +15,20 @@ public class AddDigits {
 
 class Solution {
     public int solution(int n) {
-        int answer = 0;
-        while(n > 0){
-            answer += n%10; //4 3 2
-            n/=10; //123 12 1
-        }
-        return answer;
+//        //1> 반복문
+//        int answer = 0;
+//        while(n > 0){
+//            answer += n%10; //4 3 2
+//            n/=10; //123 12 1
+//        }
+//        return answer;
+
+        //2> Stream
+        return Arrays.stream(
+                String.valueOf(n) //String의 값이 된 n을
+                        .split("") //하나하나씩 나누어서 Stream을 만든다
+            )
+                .mapToInt(Integer::parseInt)//Stream의 데이터들을 다시 int로 바꾸고
+                .sum(); //모두 더해준다
     }
 }
