@@ -2,7 +2,7 @@ package day2023_01_12;
 
 //문자열안에 문자열
 //문제 https://school.programmers.co.kr/learn/courses/30/lessons/120908
-//블로그
+//블로그 https://qiwisil.tistory.com/39
 public class String_in_string {
     public static void main(String[] args) {
         Solution s = new Solution();
