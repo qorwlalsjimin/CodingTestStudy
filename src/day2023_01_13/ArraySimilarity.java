@@ -2,6 +2,7 @@ package day2023_01_13;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
 //배열의 유사도
@@ -19,9 +20,10 @@ public class ArraySimilarity {
 class Solution {
     public int solution(String[] s1, String[] s2) {
         int answer = 0;
+        List<String> s2List = Arrays.stream(s2).collect(Collectors.toList());
+
         for(String s : s1)
-            for(String ss : s2)
-                if(s.equals(ss)) answer++;
+            if(s2List.contains(s)) answer++;
         return answer;
     }
 }
