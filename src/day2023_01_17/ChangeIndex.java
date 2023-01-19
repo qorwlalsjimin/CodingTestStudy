@@ -39,12 +39,7 @@ class Solution {
 //                +my_string.charAt(num1)                         //num1에 해당하는 문자
 //                +my_string.substring(num2, my_string.length()); //num2 다음부터 ~ 끝까지
 
-        List<String> list1 = new ArrayList<>();
-        list1.add("a");
-        list1.add("b");
-        list1.add("c");
-        Collections.swap(list1, 0, 2);
-        System.out.println(String.join("*", list1));
+
         //3> Collections.swap 메서드 이용
         List<String> list = Arrays.stream(my_string.split("")).collect(Collectors.toList()); //문자열 to List
         Collections.swap(list, num1, num2); //swap
