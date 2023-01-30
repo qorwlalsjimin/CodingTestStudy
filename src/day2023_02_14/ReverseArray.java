@@ -1,6 +1,10 @@
 package day2023_02_14;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 //배열 뒤집기
@@ -18,10 +22,15 @@ public class ReverseArray {
 
 class Solution {
     public int[] solution(int[] num_list) {
-        //1> 반복문으로 풀기
-        int[] answer = new int[num_list.length];
-        for(int i = 0, j = num_list.length-1; i<num_list.length; i++)
-            answer[i] = num_list[j--];
-        return answer;
+//        //1> 반복문으로 풀기
+//        int[] answer = new int[num_list.length];
+//        for(int i = 0, j = num_list.length-1; i<num_list.length; i++)
+//            answer[i] = num_list[j--];
+//        return answer;
+
+        //2> Collections으로 풀기
+        List<Integer> list = Arrays.stream(num_list).boxed().collect(Collectors.toList());
+        Collections.reverse(list);
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 }
