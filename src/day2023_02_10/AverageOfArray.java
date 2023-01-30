@@ -18,7 +18,7 @@ public class AverageOfArray {
 class Solution {
     public double solution(int[] numbers) {
         double answer = 0;
-        answer = IntStream.of(numbers).sum() / (float)numbers.length;
+        answer = IntStream.of(numbers).average().getAsDouble();
         return answer;
     }
 }
