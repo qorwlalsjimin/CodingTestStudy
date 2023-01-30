@@ -1,7 +1,6 @@
-package day2023_02_05;
+package day2023_02_07;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 //자릿수 더하기
 //문제 https://school.programmers.co.kr/learn/courses/30/lessons/120906
