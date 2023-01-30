@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 //짝수의 합
 // 문제 https://school.programmers.co.kr/learn/courses/30/lessons/120831
-// 블로그
+// 블로그 https://qiwisil.tistory.com/46
 public class SumOfEvens {
     public static void main(String[] args) {
         Solution s = new Solution();
