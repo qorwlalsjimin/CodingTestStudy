@@ -25,6 +25,9 @@ class Solution {
         answer[0] = (int)IntStream.of(num_list).filter(i -> i%2==0).count();
         answer[1] = (int)IntStream.of(num_list).filter(i -> i%2==1).count();
 
+        //2> 반복문을 이용한 풀이
+        for(int i = 0; i<num_list.length; i++)
+            answer[num_list[i] % 2]++;
 
         return answer;
     }
