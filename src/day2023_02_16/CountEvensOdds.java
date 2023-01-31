@@ -3,8 +3,8 @@ package day2023_02_16;
 import java.util.stream.IntStream;
 
 //짝수 홀수 개수
-// 문제
-// 블로그
+// 문제 https://school.programmers.co.kr/learn/courses/30/lessons/120824
+// 블로그 https://qiwisil.tistory.com/52
 public class CountEvensOdds {
     public static void main(String[] args) {
         Solution s = new Solution();
