@@ -2,7 +2,7 @@ package day2023_02_15;
 
 //피자 나눠 먹기(1)
 // 문제 https://school.programmers.co.kr/learn/courses/30/lessons/120814
-// 블로그
+// 블로그 https://qiwisil.tistory.com/50
 public class DividePizza {
     public static void main(String[] args) {
         Solution s = new Solution();
