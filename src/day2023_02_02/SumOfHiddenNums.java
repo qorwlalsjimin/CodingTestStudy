@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 
 //숨어있는 숫자의 덧셈 (1)
 // 문제 https://school.programmers.co.kr/learn/courses/30/lessons/120851
-// 블로그
+// 블로그 https://qiwisil.tistory.com/56
 public class SumOfHiddenNums {
     public static void main(String[] args) {
         Solution s = new Solution();
