@@ -9,8 +9,8 @@ public class RightTriangle {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        for(int i = 1; i<=n; i++)
-            System.out.println("*".repeat(i));
+//        for(int i = 1; i<=n; i++)
+//            System.out.println("*".repeat(i));
 
     }
 }
