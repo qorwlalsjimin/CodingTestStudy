@@ -21,10 +21,9 @@ class Solution {
     public String solution(String rsp) {
 
         /*Stream*/
-        List list = Arrays.stream(rsp.split("")) //문자열로 Stream 생성
+        return Arrays.stream(rsp.split("")) //문자열로 Stream 생성
                 .map(m -> m.equals("2") ? "0" : m.equals("0") ? "5" : "2") //2이면 0, 0이면 5고 아니면 2
-                .collect(Collectors.toList()); //Stream to List
-        return String.join("", list); //List to String
+                .collect(Collectors.joining()); //Stream to String
 
         /*switch문*/
 //        String answer = "";
