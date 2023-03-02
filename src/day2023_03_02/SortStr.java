@@ -25,9 +25,8 @@ class Solution3 {
         int[] answer = CharBuffer.wrap(chars).chars() //char[] to Stream
                 .filter(Character::isDigit) //숫자만 남기기
                 .map(Character::getNumericValue) //숫자의 아스키코드인 값('50')들을 실제 값(2)으로 바꾸어주기
+                .sorted() //정렬
                 .toArray(); //Stream to Array
-
-        Arrays.sort(answer); //정렬
 
         return answer;
     }
