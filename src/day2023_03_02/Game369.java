@@ -1,9 +1,9 @@
 package day2023_03_02;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 //369게임
+//문제 https://school.programmers.co.kr/learn/courses/30/lessons/120891
 public class Game369 {
     public static void main(String[] args) {
         Solution6 s = new Solution6();
