@@ -20,6 +20,7 @@ public class SortStr {
 
 class Solution3 {
     public int[] solution(String my_string) {
+        /*나의 풀이*/
         char[] chars = my_string.toCharArray(); //String to char[]
 
         int[] answer = CharBuffer.wrap(chars).chars() //char[] to Stream
@@ -29,5 +30,12 @@ class Solution3 {
                 .toArray(); //Stream to Array
 
         return answer;
+
+        /*다른 분의 풀이*/
+//        return Arrays.stream(my_string.replaceAll("[A-Z|a-z]", "").split("")) //숫자만 남긴 문자열 to Stream
+//                .sorted() //정렬
+//                .mapToInt(Integer::parseInt) //String to int
+//                .toArray(); //배열로 만들기
+
     }
 }
