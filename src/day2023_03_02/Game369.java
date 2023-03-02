@@ -13,8 +13,9 @@ public class Game369 {
 
 class Solution6 {
     public int solution(int order) {
-        return (int) Arrays.stream((order+"").split("")) //int to Stream
-                .filter(m -> m.equals("3")||m.equals("6")||m.equals("9")) //3, 6, 9만 남기고
+        return (int) Arrays.stream(String.valueOf(order).split("")) //int to Stream
+                .mapToInt(Integer::parseInt)
+                .filter(m -> m==3||m==6||m==9) //3, 6, 9만 남기고
                 .count(); //카운트
     }
 }
