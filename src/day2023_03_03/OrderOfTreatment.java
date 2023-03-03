@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 //진료순서 정하기
 // 문제 https://school.programmers.co.kr/learn/courses/30/lessons/120835
-// 블로그
+// 블로그 https://qiwisil.tistory.com/66
 public class OrderOfTreatment {
     public static void main(String[] args) {
         Solution s = new Solution();
@@ -19,8 +19,8 @@ public class OrderOfTreatment {
 }
 
 /*
+ * 숫자로 인덱스 값을 알기 위해서는 List로 변환해줘야한다. emer_list를 만들어준다
  * emer_copy_list를 정렬해서 3, 24, 76으로 만든다
- * 값으로 인덱스 값을 알기 위해서는 List로 변환해줘야한다. emer_list를 만들어준다
  * 내림차순 정렬을 해야하는데 그러려면 List(emer_copy_list)로 만들어야한다
  * reverse()로 내림차순 정렬을 해주면 76, 24, 3
  * emer_copy_list를 하나씩 반복하면서 answer[emer_list.indexOf(아이템)] = order++;
